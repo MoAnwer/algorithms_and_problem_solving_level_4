@@ -4,7 +4,7 @@ using namespace std;
 
 bool IsLeapYear(short Year)
 {
-    return Year % 400 || (Year % 4 == 0 && Year % 100 != 0);
+    return Year % 400 == 0 || (Year % 4 == 0 && Year % 100 != 0);
 }
 
 short NumberOfDaysInAMonth(short Year, short Month)
